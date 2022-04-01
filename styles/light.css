@@ -1,0 +1,353 @@
+/*
+Control border color:#95A5A6   149,165,166
+Small Icon Color : #95A5A6
+Control hover border color: #f5ba9d
+Control hover background: #fce4dc
+Toolbar background:#F2F1EF
+*/
+
+
+QDockWidget > QWidget {
+  background:#DADFE1;
+}
+
+
+QComboBox {
+      border: 1px solid gray;
+      border-radius: 3px;
+      padding: 1px 18px 1px 3px;
+      min-width: 6em;
+  }
+
+
+
+
+QToolButton  {
+  background::transparent;
+  border:none;
+}
+
+QToolButton:hover {
+  border:1px solid #f5ba9d;
+  background: #fce4dc;
+}
+
+#btnOk,#btnCancel  {
+  background::transparent;
+  border:1px solid #f5ba9d;
+  min-width: 75px;
+  min-height:23px;
+}
+
+#btnOk:hover,#btnCancel:hover {
+  border:1px solid #f5ba9d;
+  background: #fce4dc;
+}
+
+
+
+QCheckBox::indicator {
+  border:1px solid #95A5A6;
+  background:white;
+  image: url(:/styles/light/checkbox_outline_24.png);
+}
+
+QCheckBox::indicator:hover {
+  border:1px solid #f5ba9d;
+  background: #fce4dc;
+}
+
+QLineEdit {
+  border:1px solid #95A5A6;
+  border-radius:2px;
+}
+
+QLineEdit:hover {
+  border:1px solid #f5ba9d;
+}
+
+#browserspace {
+   /* bg: */
+   opacity: 0.5;
+   background: #222222;
+}
+
+
+#checkLockScale{
+  border:none;
+  background:none;
+  spacing: 5px;
+}
+
+
+
+#checkLockScale::indicator {
+border:1px solid #95A5A6;
+background:white;
+
+width:18px;
+height:18px;
+}
+
+#checkLockScale::indicator:unchecked {
+background:white;
+image: url(:/styles/light/lock_open_20.png);
+
+}
+
+#checkLockScale::indicator:hover {
+border:1px solid #f5ba9d;
+}
+
+
+
+
+#checkLockScale::indicator:checked {
+image: url(:/styles/light/lock_close_20.png);
+background:#BFBFBF;
+}
+
+
+
+
+
+#toolBar{
+  border:none;
+  border-bottom:1px solid #95A5A6;
+  background:#F2F1EF;
+}
+
+#statusBar{
+border:none;
+  border-top:1px solid #95A5A6;
+  background:#DADFE1;
+}
+
+#webGallery {
+  background:#DADFE1;
+}
+
+#thumbGallery {
+  background:#DADFE1;
+}
+
+Workspace {
+background:#DADFE1;
+}
+
+#browserspace{
+background:#DADFE1;
+}
+
+#labelScaleLockSign {
+border:1px solid #95A5A6;
+border-top:none;
+}
+
+
+QSplitter::handle:horizontal {
+    width: 1px;
+    background-color:#95A5A6;
+}
+
+QSplitter::handle:vertical {
+    height: 1px;
+    background-color:#95A5A6;
+}
+
+
+QSlider::groove{
+        height: 12px;
+        background: transparent;
+}
+
+QSlider::sub-page {
+        border-top: 2px solid #f5ba9d;
+        background:transparent;
+        margin-top: 5px;
+}
+
+QSlider::add-page{
+    border-top: 1px solid #95A5A6;
+    background:transparent;
+    margin-top: 6px;
+}
+
+QSlider::handle{
+  background:white;
+  height: 11px;
+  width: 10px;
+  border:1px solid #95A5A6;
+  border-radius: 5px;
+}
+
+QSlider::handle:hover{
+  background: #fce4dc;
+  border:1px solid #95A5A6;
+
+}
+
+
+QScrollBar{
+  background-color:transparent;
+  border: none;
+}
+
+QScrollBar::handle:vertical:hover,QScrollBar::handle:horizontal:hover {
+    background: #AAB2BD;
+}
+
+
+QScrollBar::handle:vertical,QScrollBar::handle:horizontal {
+    background:#CCD1D9;
+    border-radius:5px;
+}
+
+
+QScrollBar:vertical {
+     width: 12px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+
+ }
+
+QScrollBar::handle:vertical {
+    min-height: 15px;
+}
+
+
+QScrollBar::add-line:vertical {
+     background: transparent;
+     border:transparent;
+     height: 0px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     border: transparent;
+     background-color: transparent;
+     height: 0px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical, QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+     border: none;
+     width: 0px;
+     height: 0px;
+ }
+
+
+QScrollBar:horizontal {
+     height: 12px;
+     margin-left: 0px;
+     margin-right: 0px;
+ }
+
+ QScrollBar::handle:horizontal {
+     min-width: 15px;
+ }
+
+
+ QScrollBar::add-line:horizontal {
+     background: transparent;
+     width: 0px;
+     subcontrol-position: right;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:horizontal {
+     border: transparent;
+     background-color: transparent;
+     width: 0px;
+     subcontrol-position: left;
+     subcontrol-origin: margin;
+ }
+
+
+QSpinBox {
+   border:1px solid #95A5A6;
+}
+
+QSpinBox:hover,QSpinBox:focus {
+border:1px solid #f5ba9d;
+}
+
+QSpinBox::up-button{
+  subcontrol-position: top right; /* position at the top right corner */
+}
+
+QSpinBox::down-button{
+  subcontrol-position: bottom right; /* position at bottom right corner */
+}
+
+
+QSpinBox::up-button,QSpinBox::down-button {
+  subcontrol-origin: border;
+  border:transparent;
+  width: 16px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+}
+
+
+
+
+QSpinBox::up-button:focus , QSpinBox::up-button:hover {
+  border:1px solid #f5ba9d;
+}
+
+QSpinBox::down-button:focus , QSpinBox::down-button:hover {
+  border:1px solid #f5ba9d;
+  border-top:transparent;
+}
+
+QSpinBox::up-button:hover,QSpinBox::down-button:hover {
+  background:#fce4dc;
+}
+
+QSpinBox::down-arrow:focus,QSpinBox::down-arrow:hover {
+  image: url(:/styles/light/down_16_8.png);
+  width: 16px;
+  height: 8px;
+}
+
+
+
+QSpinBox::up-arrow:focus,QSpinBox::up-arrow:hover {
+  image:url(:/styles/light/up_16_8.png);
+  width: 16px;
+  height: 8px;
+}
+
+#editor  QToolButton {
+border:1px solid #95A5A6;
+}
+
+#editor  QToolButton:hover {
+border:1px solid #f5ba9d;
+background: #fce4dc;
+}
+
+
+
+#editor #btnFlipLeft {
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+border-right:none;
+}
+
+
+#editor #btnFlipRight {
+border-right:none;
+}
+
+
+#editor #btnFlipV {
+border-right:none;
+}
+
+#editor #btnFlipH {
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+

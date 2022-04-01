@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="topbar" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#topbar{
+border: 1px solid none;
+border-bottom-color:black;
+}
+</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignRight">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>285</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="ZoomAdjust" name="zoomPart" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>12</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="centralContainer" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="WSplitter" name="splitter">
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="opaqueResize">
+          <bool>true</bool>
+         </property>
+         <property name="handleWidth">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="leftPanel" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>250</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="leftTopBar" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>28</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>28</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#leftTopBar{
+border: 1px solid none;
+border-bottom-color:black;
+border-right-color:black;
+}</string>
+             </property>
+             <widget class="QLabel" name="label_10">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>8</y>
+                <width>59</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Machine</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QStackedWidget" name="leftStack">
+             <property name="styleSheet">
+              <string notr="true">#leftStack{
+border: 1px solid none;
+border-right-color:black;
+}
+
+#leftContainer  QToolButton {
+border:1px solid #95A5A6;
+}
+
+#leftContainer  QToolButton:hover {
+border:1px solid #f5ba9d;
+background: #fce4dc;
+}
+
+
+
+#leftContainer #btnConnect {
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+
+}
+
+
+
+#leftContainer #btnDisconnect {
+border-left:none;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+</string>
+             </property>
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <widget class="QWidget" name="pageMachine">
+              <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,0">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QWidget" name="connectionPart" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>160</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>160</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#connectionPart{
+border: 1px solid none;
+border-bottom-color:black;
+}</string>
+                 </property>
+                 <widget class="QtMaterialIconButton" name="btnCommRefresh" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>198</x>
+                    <y>20</y>
+                    <width>28</width>
+                    <height>28</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_11">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>22</y>
+                    <width>41</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Port</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QToolButton" name="btnDisconnect">
+                  <property name="geometry">
+                   <rect>
+                    <x>124</x>
+                    <y>100</y>
+                    <width>64</width>
+                    <height>24</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/disconnected.svg</normaloff>:/icons/disconnected.svg</iconset>
+                  </property>
+                 </widget>
+                 <widget class="QToolButton" name="btnConnect">
+                  <property name="geometry">
+                   <rect>
+                    <x>60</x>
+                    <y>100</y>
+                    <width>64</width>
+                    <height>24</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/connected.svg</normaloff>:/icons/connected.svg</iconset>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_12">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>60</y>
+                    <width>41</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Baud</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="comboCommPort">
+                  <property name="geometry">
+                   <rect>
+                    <x>60</x>
+                    <y>20</y>
+                    <width>131</width>
+                    <height>24</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="comboCommBaud">
+                  <property name="geometry">
+                   <rect>
+                    <x>60</x>
+                    <y>60</y>
+                    <width>131</width>
+                    <height>24</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="DirectionController" name="controllerPart" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#controllerPart{
+border: 1px solid none;
+border-bottom-color:black;
+}</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_5" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageLayers">
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <property name="spacing">
+                <number>-1</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="DomTreeView" name="treeLayers">
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="dragEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="dragDropOverwriteMode">
+                  <bool>true</bool>
+                 </property>
+                 <property name="dragDropMode">
+                  <enum>QAbstractItemView::InternalMove</enum>
+                 </property>
+                 <property name="defaultDropAction">
+                  <enum>Qt::MoveAction</enum>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::MultiSelection</enum>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectItems</enum>
+                 </property>
+                 <property name="animated">
+                  <bool>false</bool>
+                 </property>
+                 <property name="headerHidden">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="container" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="Workspace" name="workspace" native="true"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="rightPanel" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>228</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>228</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#rightPanel {
+border: 1px solid none;
+border-left-color:black;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="rightTopBar" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>28</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>28</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#rightTopBar{
+  border: 1px solid none;
+  border-bottom-color:black;
+}
+</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QToolButton" name="btnAlignEdgeLeft">
+               <property name="minimumSize">
+                <size>
+                 <width>28</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="btnAlignEdgeVCenter">
+               <property name="minimumSize">
+                <size>
+                 <width>28</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="btnAlignEdgeRight">
+               <property name="minimumSize">
+                <size>
+                 <width>28</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="btnAlignEdgeTop">
+               <property name="minimumSize">
+                <size>
+                 <width>28</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="btnAlignEdgeHCenter">
+               <property name="minimumSize">
+                <size>
+                 <width>28</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="btnAlignEdgeBottom">
+               <property name="minimumSize">
+                <size>
+                 <width>28</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="btnDistributeHori">
+               <property name="minimumSize">
+                <size>
+                 <width>28</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="btnDistributeVert">
+               <property name="minimumSize">
+                <size>
+                 <width>28</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="positionPart" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>180</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>180</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#positionPart{
+  border: 1px solid none;
+  border-bottom-color:black;
+}</string>
+            </property>
+            <widget class="QLabel" name="label">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>25</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>W</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>25</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>H</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_3">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>63</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Y</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>63</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>X</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QtMaterialToggle" name="checkLockPosition" native="true">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>120</y>
+               <width>60</width>
+               <height>40</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_5">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>130</y>
+               <width>81</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Lock Postion</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QSpinBox" name="editW">
+             <property name="geometry">
+              <rect>
+               <x>38</x>
+               <y>23</y>
+               <width>61</width>
+               <height>25</height>
+              </rect>
+             </property>
+             <property name="keyboardTracking">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+            <widget class="QSpinBox" name="editH">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>23</y>
+               <width>61</width>
+               <height>25</height>
+              </rect>
+             </property>
+             <property name="keyboardTracking">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+            <widget class="QSpinBox" name="editX">
+             <property name="geometry">
+              <rect>
+               <x>38</x>
+               <y>60</y>
+               <width>61</width>
+               <height>25</height>
+              </rect>
+             </property>
+             <property name="keyboardTracking">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+            <widget class="QSpinBox" name="editY">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>60</y>
+               <width>61</width>
+               <height>25</height>
+              </rect>
+             </property>
+             <property name="keyboardTracking">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+            <widget class="QSpinBox" name="editAngle">
+             <property name="geometry">
+              <rect>
+               <x>150</x>
+               <y>97</y>
+               <width>61</width>
+               <height>25</height>
+              </rect>
+             </property>
+             <property name="keyboardTracking">
+              <bool>false</bool>
+             </property>
+             <property name="suffix">
+              <string notr="true">°</string>
+             </property>
+             <property name="maximum">
+              <number>359</number>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+            </widget>
+            <widget class="QLabel" name="labelRefresh">
+             <property name="geometry">
+              <rect>
+               <x>124</x>
+               <y>100</y>
+               <width>16</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resources.qrc">:/icons/rotate.svg</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QToolButton" name="btnLockScale">
+             <property name="geometry">
+              <rect>
+               <x>105</x>
+               <y>26</y>
+               <width>20</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="fontPart" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#fontPart{
+  border: 1px solid none;
+  border-bottom-color:black;
+}
+
+#fontPart  QToolButton {
+border:1px solid;
+}
+
+#fontPart  QToolButton:hover {
+border:1px solid #f5ba9d;
+background: #fce4dc;
+}
+
+
+
+#fontPart #btnTextAlignLeft {
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+border-right:none;
+}
+
+
+#fontPart #btnTextAlignCenter {
+border-right:none;
+}
+
+
+#fontPart #btnAlignRight {
+border-right:none;
+}
+
+#fontPart #btnTextAlignJustify {
+border-left:none;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+#fontPart #btnTextBold {
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+border-right:none;
+}
+
+
+#fontPart #btnTextItalitic {
+border-right:none;
+}
+
+#fontPart #btnTextUnderline {
+border-left:none;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+</string>
+            </property>
+            <widget class="QFontComboBox" name="comboFontName">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>40</y>
+               <width>131</width>
+               <height>24</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>61</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Typeface</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QToolButton" name="btnTextAlignLeft">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>110</y>
+               <width>24</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/formatalignleft.svg</normaloff>:/icons/formatalignleft.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QToolButton" name="btnTextAlignCenter">
+             <property name="geometry">
+              <rect>
+               <x>44</x>
+               <y>110</y>
+               <width>24</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/formataligncenter.svg</normaloff>:/icons/formataligncenter.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QToolButton" name="btnTextAlignRight">
+             <property name="geometry">
+              <rect>
+               <x>68</x>
+               <y>110</y>
+               <width>24</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/formatalignright.svg</normaloff>:/icons/formatalignright.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QToolButton" name="btnTextAlignJustify">
+             <property name="geometry">
+              <rect>
+               <x>92</x>
+               <y>110</y>
+               <width>24</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/formatalignjustify.svg</normaloff>:/icons/formatalignjustify.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QToolButton" name="btnTextBold">
+             <property name="geometry">
+              <rect>
+               <x>142</x>
+               <y>70</y>
+               <width>24</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/formatbold.svg</normaloff>:/icons/formatbold.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QToolButton" name="btnTextItalic">
+             <property name="geometry">
+              <rect>
+               <x>166</x>
+               <y>70</y>
+               <width>24</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/formatitalic.svg</normaloff>:/icons/formatitalic.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QToolButton" name="btnTextUnderline">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>70</y>
+               <width>24</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/formatunderlined.svg</normaloff>:/icons/formatunderlined.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>70</y>
+               <width>61</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Size</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_8">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>59</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Text</string>
+             </property>
+            </widget>
+            <widget class="QSpinBox" name="editFontSize">
+             <property name="geometry">
+              <rect>
+               <x>82</x>
+               <y>70</y>
+               <width>51</width>
+               <height>25</height>
+              </rect>
+             </property>
+             <property name="maximum">
+              <number>999</number>
+             </property>
+             <property name="value">
+              <number>8</number>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="outlookPart" native="true">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>592</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+  </widget>
+  <widget class="QToolBar" name="leftBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>40</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftToolBarArea</set>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>18</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QDockWidget" name="bottomDock">
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Pre&amp;ferences...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::PreferencesRole</enum>
+   </property>
+  </action>
+  <action name="actionLayers">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/layers.svg</normaloff>:/icons/layers.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Layers</string>
+   </property>
+  </action>
+  <action name="actionSelect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/select.svg</normaloff>:/icons/select.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </action>
+  <action name="actionPicture">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/picture.svg</normaloff>:/icons/picture.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Picture</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/rectangle.svg</normaloff>:/icons/rectangle.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Rectangle</string>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/line.svg</normaloff>:/icons/line.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Line</string>
+   </property>
+  </action>
+  <action name="actionCircle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/circle.svg</normaloff>:/icons/circle.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Circle</string>
+   </property>
+  </action>
+  <action name="actionCurve">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/curve.svg</normaloff>:/icons/curve.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Curve</string>
+   </property>
+  </action>
+  <action name="actionMachine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/machine.svg</normaloff>:/icons/machine.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Machine</string>
+   </property>
+  </action>
+  <action name="actionAlignEdgeLeft">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/alignedgeleft.svg</normaloff>:/icons/alignedgeleft.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Align Left</string>
+   </property>
+   <property name="iconText">
+    <string>Align Left</string>
+   </property>
+  </action>
+  <action name="actionAlignEdgeHCenter">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/aligncenter.svg</normaloff>:/icons/aligncenter.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AlignCenter</string>
+   </property>
+  </action>
+  <action name="actionAlignEdgeRight">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/alignedgeright.svg</normaloff>:/icons/alignedgeright.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AlignRight</string>
+   </property>
+  </action>
+  <action name="actionAlignEdgeTop">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/alignedgetop.svg</normaloff>:/icons/alignedgetop.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AlignTop</string>
+   </property>
+  </action>
+  <action name="actionAlignEdgeVCenter">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/alignmiddle.svg</normaloff>:/icons/alignmiddle.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AlignMiddle</string>
+   </property>
+  </action>
+  <action name="actionAlignEdgeBottom">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/alignedgetop.svg</normaloff>:/icons/alignedgetop.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AlignBottom</string>
+   </property>
+  </action>
+  <action name="actionDistributeHori">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/distributehorizontally.svg</normaloff>:/icons/distributehorizontally.svg</iconset>
+   </property>
+   <property name="text">
+    <string>DistributeHori</string>
+   </property>
+  </action>
+  <action name="actionDistributeVerti">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/distributevertically.svg</normaloff>:/icons/distributevertically.svg</iconset>
+   </property>
+   <property name="text">
+    <string>DistributeVertically</string>
+   </property>
+  </action>
+  <action name="actionText">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/text.svg</normaloff>:/icons/text.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+  </action>
+  <action name="actionTextBold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string> Bold</string>
+   </property>
+  </action>
+  <action name="actionTextItalic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Italic</string>
+   </property>
+  </action>
+  <action name="actionTextUnderline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Underline</string>
+   </property>
+  </action>
+  <action name="actionTextAlignLeft">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Align to Left</string>
+   </property>
+  </action>
+  <action name="actionTextAlignRight">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Align right</string>
+   </property>
+  </action>
+  <action name="actionTextAlignJustify">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Align Justify</string>
+   </property>
+  </action>
+  <action name="actionTextAlignCenter">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Align Center</string>
+   </property>
+  </action>
+  <action name="actionLockScale">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Lock Scale</string>
+   </property>
+  </action>
+  <action name="actionGroup">
+   <property name="text">
+    <string>Group</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionLock">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Lock</string>
+   </property>
+  </action>
+  <action name="actionVisible">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Visible</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QtMaterialToggle</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialtoggle.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QtMaterialIconButton</class>
+   <extends>QWidget</extends>
+   <header>qtmaterialiconbutton.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Workspace</class>
+   <extends>QWidget</extends>
+   <header>workspace.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DirectionController</class>
+   <extends>QWidget</extends>
+   <header>directioncontroller.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ZoomAdjust</class>
+   <extends>QWidget</extends>
+   <header>zoomadjust.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WSplitter</class>
+   <extends>QSplitter</extends>
+   <header>wsplitter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DomTreeView</class>
+   <extends>QTreeView</extends>
+   <header location="global">domtreeview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
