@@ -1,7 +1,7 @@
 # WorkXP
 
 #### Introduction
-It's a desktop app based on Qt5 widget, which of an original purpose for controlling of 2D plotting machine.
+It's a desktop app based on Qt5 widget, with an original purpose for controlling of my own 2D plotting machine.
 
 #### Running & Building
 Prepare Qt-Creator with QT5.14 or above, open .pro file and enjoy, no extra dependences.
